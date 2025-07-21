@@ -112,18 +112,18 @@ const ContributorCard = ({ contributor }: { contributor: typeof mockContributors
 const Index = () => {
   const totalContributors = mockContributors.length;
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground  ">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border  sm:px-6 md:px-8 ">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-purple-600 rounded-lg flex items-center justify-center">
-                <Code2 className="w-6 h-6 text-white" />
+                <img src="./contributorhub.jpg" alt="Logo" className="w-6 h-6" />
               </div>
               <div>
                 <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                  ContribHub
+                  ContributorHub
                 </h1>
                 <p className="text-xs text-muted-foreground">Premium Contributors Platform</p>
               </div>
@@ -131,21 +131,25 @@ const Index = () => {
 
 
             <div className="flex items-center gap-3">
-              <Button variant="outline" size="sm" className="border-border hover:border-primary/50">
+            <a href="https://github.com/sujanthapa01/ContributorHub" target="_blank" rel="noopener noreferrer" className="hidden sm:block md:block">
+                <Button variant="outline" size="sm" className="border-border hover:border-primary/50">
                 <Github className="w-4 h-4 mr-2" />
                 View Source
               </Button>
-              <Button size="sm" className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90">
+            </a>
+              <a href="" className="hidden sm:block md:block">
+                <Button size="sm"  className="bg-gradient-to-r from-primary to-pink-400 hover:from-primary/90 hover:to-pink-600/90 transition-colors ">
                 <Heart className="w-4 h-4 mr-2" />
                 Sponsor
               </Button>
+              </a>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-6 overflow-hidden">
+      <section className="relative py-20 px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-purple-600/5" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,theme(colors.primary/10),transparent_50%)]" />
 
@@ -165,11 +169,7 @@ const Index = () => {
           </p>
 
           <div className="flex items-center justify-center gap-8 mb-12">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">{totalContributors}</div>
-              <div className="text-sm text-muted-foreground">Amazing Contributors</div>
-            </div>
-            <div className="w-px h-12 bg-border" />
+            <div className="w-px h-12" />
             <div className="text-center">
               <div className="text-4xl font-bold text-purple-600 mb-2">{totalContributors}</div>
               <div className="text-sm text-muted-foreground">Total Contributions</div>
@@ -184,7 +184,7 @@ const Index = () => {
       </section>
 
       {/* Contributors Grid */}
-      <section id="contributors" className="py-16 px-6">
+      <section id="contributors" className="py-16 px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -221,10 +221,10 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer id="footer" className="bg-card border-t border-border py-16 px-6">
+      <footer id="footer" className="bg-card border-t border-border py-12 px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-12">
-            <div>
+          <div className="mb-12 flex flex-col md:flex-row gap-6 md:gap-3 justify-between">
+            <div className="md:w-[400px] w-full">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 bg-gradient-to-br from-primary to-purple-600 rounded-lg flex items-center justify-center">
                   <Code2 className="w-6 h-6 text-white" />
@@ -234,17 +234,9 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">
                 Celebrating developers who contribute to open source and build the future of technology.
               </p>
-              <div className="flex gap-4">
-                <Button size="sm" variant="ghost" className="h-10 w-10 p-0">
-                  <Github className="w-5 h-5" />
-                </Button>
-                <Button size="sm" variant="ghost" className="h-10 w-10 p-0">
-                  <Heart className="w-5 h-5" />
-                </Button>
-              </div>
             </div>
 
-            <div>
+            <div className="w-full md:w-auto">
               <h4 className="font-semibold mb-4">Inspirational Quotes</h4>
               <div className="space-y-3">
                 {inspirationalQuotes.slice(0, 2).map((quote, index) => (
@@ -254,31 +246,13 @@ const Index = () => {
                 ))}
               </div>
             </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <div className="space-y-2">
-                <a href="#contributors" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  View Contributors
-                </a>
-                <a href="https://github.com" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  GitHub Repository
-                </a>
-                <a href="#" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  How to Contribute
-                </a>
-                <a href="#" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Documentation
-                </a>
-              </div>
-            </div>
           </div>
 
           <div className="border-t border-border pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="text-center md:text-left">
                 <p className="text-sm text-muted-foreground">
-                  Made with ❤️ by the open source community
+                  Made with <span className="heart-beat text-red-500 ">❤️</span> by the <a href="https://github.com/sujanthapa01" target="_blank" rel="noopener noreferrer"><span className='hover:text-blue-400'>@sujanthapa01</span></a>
                 </p>
                 <p className="text-xs text-muted-foreground mt-1">
                   Created by <span className="text-primary font-medium">an amazing developer</span> •
