@@ -26,28 +26,33 @@ const Index: React.FC<{
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
+          <nav className="flex items-center gap-4">
+            <a
+              href="/docs"
+              className="border-b border-gray-300 hover:border-primary/50 transition-colors px-2 py-1 text-sm font-medium"
+            >
+              Docs
+            </a>
             <a
               href="https://github.com/sujanthapa01/ContributorHub"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:block md:block"
+              className="hidden sm:block"
             >
               <Button
                 variant="outline"
                 size="sm"
-                className="border-border hover:border-primary/50"
+                className="border-border hover:border-primary/50 flex items-center"
               >
                 <Github className="w-4 h-4 mr-2" />
                 View Source
               </Button>
             </a>
-
             {state === "docs" ? (
-              <a href="/">
+              <a href="/" className="ml-2">
                 <Button
                   size="sm"
-                  className="bg-gradient-to-r to-green-400 hover:from-primary/100 hover:to-green-600/100 transition-colors font-extrabold text-[18px]"
+                  className="bg-gradient-to-r to-green-400 hover:from-primary/100 hover:to-green-600/100 transition-colors font-extrabold text-[18px] flex items-center"
                 >
                   <Code2 className="w-4 h-4 mr-2" />
                   let's contribute
@@ -56,13 +61,13 @@ const Index: React.FC<{
             ) : (
               <Button
                 size="sm"
-                className="bg-gradient-to-r from-primary to-pink-400 hover:from-primary/90 hover:to-pink-600/90 transition-colors"
+                className="bg-gradient-to-r from-primary to-pink-400 hover:from-primary/90 hover:to-pink-600/90 transition-colors flex items-center ml-2"
               >
                 <Heart className="w-4 h-4 mr-2" />
                 Sponsor
               </Button>
             )}
-          </div>
+          </nav>
         </div>
       </div>
     </header>
