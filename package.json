@@ -10,11 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "contributor_add": "python3 src/scripts/contributor_add.py",
-     "prepare": "husky install"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css,md}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint --fix"
     ]
   },
   "dependencies": {
