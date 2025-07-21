@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Programming language colors
+				java: 'hsl(var(--java))',
+				python: 'hsl(var(--python))',
+				javascript: 'hsl(var(--javascript))',
+				typescript: 'hsl(var(--typescript))',
+				react: 'hsl(var(--react))',
+				go: 'hsl(var(--go))',
+				cpp: 'hsl(var(--cpp))',
+				// Status colors
+				online: 'hsl(var(--online))',
+				success: 'hsl(var(--success))',
+				warning: 'hsl(var(--warning))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
