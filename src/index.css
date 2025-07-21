@@ -122,3 +122,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+.heart-beat {
+  animation: heartbeat 1s infinite ease-in-out;
+  display: inline-block;
+  transform-origin: center;
+}
