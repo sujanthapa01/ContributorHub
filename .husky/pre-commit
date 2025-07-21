@@ -1,0 +1,12 @@
+echo "⏳ Running Prettier and lint-staged..."
+
+# Run lint-staged for additional checks
+echo "🔍 Running lint-staged..."
+yarn lint-staged
+
+if [ $? -eq 0 ]; then
+  echo "✅ Pre-commit checks completed successfully."
+else
+  echo "❌ Pre-commit checks failed. Please fix the issues before committing."
+  exit 1
+fi
