@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 bg-background ">
       {/* Header */}
-      <Header bgColor="bg-white" borderColor="border-gray-200" />
+      <Header bgColor="bg-white" borderColor="border-gray-200" state="docs" />
 
       {/* Main */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
