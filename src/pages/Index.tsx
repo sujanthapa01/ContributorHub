@@ -1,7 +1,5 @@
 import {
-  Star,
   Github,
-  Heart,
   MapPin,
   Calendar,
   ExternalLink,
