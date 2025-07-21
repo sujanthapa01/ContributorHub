@@ -1,5 +1,4 @@
 echo "⏳ Running Prettier and lint-staged..."
-
 # Run lint-staged for additional checks
 echo "🔍 Running lint-staged..."
 yarn lint-staged
