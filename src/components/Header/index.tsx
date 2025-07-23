@@ -17,22 +17,26 @@ const Index: React.FC<{
               <img src="./contributorhub.jpg" alt="Logo" className="w-6 h-6" />
             </div>
             <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                ContributorHub
-              </h1>
-              <p className="text-xs text-muted-foreground">
-                Premium Contributors Platform
-              </p>
+              <a href="/">
+                <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+                  ContributorHub
+                </h1>
+                <p className="text-xs text-muted-foreground">
+                  Premium Contributors Platform
+                </p>
+              </a>
             </div>
           </div>
 
           <nav className="flex items-center gap-4">
-            <a
-              href="/docs"
-              className="border-b border-gray-300 hover:border-primary/50 transition-colors px-2 py-1 text-sm font-medium hidden lg:block xl:block"
-            >
-              Docs
-            </a>
+            {state === "docs" ? null : (
+              <a
+                href="/docs"
+                className="border-b border-gray-300 hover:border-primary/50 transition-colors px-2 py-1 text-sm font-medium hidden lg:block xl:block"
+              >
+                Docs
+              </a>
+            )}
             <a
               href="https://github.com/sujanthapa01/ContributorHub"
               target="_blank"
