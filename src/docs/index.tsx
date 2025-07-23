@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Book, Zap, Code, Users, Github } from "lucide-react";
+import { Book, Zap, Code, Users, Github, Code2 } from "lucide-react";
 
 import Documentation from "@/components/documentation/index";
 import Header from "@/components/Header/index";
@@ -92,7 +92,7 @@ function App() {
                       improvements.
                     </p>
                     <a
-                      href="https://github.com/your-repo"
+                      href="https://github.com/sujanthapa01/ContributorHub"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm"
@@ -123,19 +123,19 @@ function App() {
                   {/* New Contributor Guide */}
                   <div className="text-center p-4 sm:p-6 border border-gray-200 rounded-lg hover:shadow-md transition-shadow sm:col-span-2 lg:col-span-1">
                     <div className="w-12 h-12 sm:w-16 sm:h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                      <Users className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-600" />
+                      <Code2 className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-600" />
                     </div>
                     <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">
-                      New Contributor Guide
+                      Contribute Now
                     </h3>
                     <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4">
-                      Start contributing with our easy onboarding docs.
+                      Start contributing Now.
                     </p>
                     <a
-                      href="#contributors"
+                      href="/"
                       className="text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm"
                     >
-                      View Guide →
+                      contribute →
                     </a>
                   </div>
                 </div>
