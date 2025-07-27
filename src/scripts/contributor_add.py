@@ -33,10 +33,10 @@ def add_contributor(username):
     # Input additional details
     print(f"\n👋 Hello {github_data.get('name') or username}!")
     full_name = input("📝 Enter your full name (with spaces): ").strip()
-    short_bio = input("🚀 Write a short bio: ").strip()
+    short_bio = input("🚀 Write somthing everybody can see : ").strip()
 
     # New: Input languages as comma-separated string, then convert to list
-    languages_input = input("💬 Enter languages (comma separated): ").strip()
+    languages_input = input("💬 Enter programming languages (comma separated): ").strip()
     languages = [lang.strip() for lang in languages_input.split(',') if lang.strip()]
 
     if not full_name or not short_bio:
