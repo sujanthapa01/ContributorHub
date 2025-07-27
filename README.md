@@ -1,6 +1,7 @@
 # ContributorHub
 
-![Landing Page](./assets/landing-page.png)
+[![Landing Page](https://res.cloudinary.com/dmg30zh6b/image/upload/v1753646159/Screenshot_from_2025-07-27_21-55-32_jywg3b.png)](https://res.cloudinary.com/dmg30zh6b/image/upload/v1753646159/Screenshot_from_2025-07-27_21-55-32_jywg3b.png)
+
 
 ContributorHub helps new open source contributors showcase their GitHub profiles easily.
 
