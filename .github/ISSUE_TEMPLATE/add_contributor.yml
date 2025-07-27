@@ -1,5 +1,5 @@
 name: "🌟 Add New Contributor"
-about: "Add your profile to ContributorHub — perfect for beginners!"
+description: "Add your profile to ContributorHub — perfect for beginners!"
 labels: ["👋 new contributor", "✨ enhancement"]
 assignees:
   - sujanthapa01
