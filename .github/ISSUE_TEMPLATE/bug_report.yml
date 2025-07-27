@@ -1,5 +1,5 @@
-name: 🐛 Bug Report
-description: Found something that's not working? Let us know so we can fix it!
+name: "🐛 Bug Report"
+description: "Found something that's not working? Let us know so we can fix it!"
 title: "🐛 [Bug]: "
 labels: ["🐛 bug", "🔍 needs triage"]
 assignees:
@@ -15,48 +15,40 @@ body:
         **Don't worry if you're not sure** - we'll help figure it out together! 😊
         
         ---
-
-  - type: textarea
+        
+  - type: input
     id: bug_description
     attributes:
       label: 🐛 What went wrong?
-      description: Tell us what happened in simple terms. Don't worry about being technical!
       placeholder: "e.g., When I click the 'Add Contributor' button, nothing happens..."
-      rows: 3
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: expected_behavior
     attributes:
       label: ✅ What should have happened?
-      description: What did you expect to happen instead?
       placeholder: "e.g., I expected my profile to be added to the contributors list..."
-      rows: 2
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: steps_to_reproduce
     attributes:
       label: 🔄 How can we reproduce this bug?
-      description: Step-by-step instructions to recreate the problem
       placeholder: |
         1. Go to the website
         2. Click on '...'
         3. Fill in the form with '...'
         4. See error
-      rows: 4
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: error_messages
     attributes:
       label: ❌ Any error messages?
-      description: Copy and paste any error messages you see (even if they look scary!)
       placeholder: "Paste any error messages here - don't worry about understanding them!"
-      rows: 3
     validations:
       required: false
 
@@ -64,7 +56,6 @@ body:
     id: bug_area
     attributes:
       label: 🎯 Where did this happen?
-      description: Which part of ContributorHub were you using?
       options:
         - "Website (contributorhub.dev)"
         - "Local development (npm start)"
@@ -79,7 +70,6 @@ body:
     id: browser
     attributes:
       label: 🌐 Which browser are you using?
-      description: This helps us test the fix
       options:
         - "Chrome"
         - "Firefox"
@@ -113,13 +103,11 @@ body:
         - label: "Developer working on the project"
         - label: "Just browsing the website"
 
-  - type: textarea
+  - type: input
     id: additional_context
     attributes:
       label: 📎 Anything else that might help?
-      description: Screenshots, additional details, or anything else you think might be useful
       placeholder: "Feel free to add screenshots, links, or any other details that might help us understand the problem better!"
-      rows: 3
     validations:
       required: false
 
@@ -127,7 +115,6 @@ body:
     id: help_offer
     attributes:
       label: 🤝 Would you like to help fix this?
-      description: No pressure! But if you're interested in learning...
       options:
         - label: "Yes, I'd like to learn how to fix this (with guidance!)"
         - label: "Maybe, if it's beginner-friendly"
