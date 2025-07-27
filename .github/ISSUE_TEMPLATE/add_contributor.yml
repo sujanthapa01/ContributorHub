@@ -1,0 +1,130 @@
+name: "🌟 Add New Contributor"
+about: "Request to add your profile to ContributorHub (Perfect for beginners!)"
+labels: ["👋 new contributor", "✨ enhancement"]
+assignees:
+  - sujanthapa01
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Welcome to ContributorHub! 🎉
+        
+        Thank you for wanting to contribute! This template will help us add your profile to our beautiful contributor showcase.
+        
+        **This is perfect if you're:**
+        - 🆕 Making your first open source contribution
+        - 🎓 A student learning about open source
+        - 💼 Building your developer portfolio
+        - 🌱 Anyone wanting to join our community
+        
+        ---
+
+  - type: input
+    id: github_username
+    attributes:
+      label: 📝 Your GitHub Username
+      description: Enter your GitHub username (without the @ symbol)
+      placeholder: "e.g., sujanthapa01"
+    validations:
+      required: true
+
+  - type: input
+    id: display_name
+    attributes:
+      label: 🏷️ Display Name (Optional)
+      description: How should we display your name? (Leave blank to use your GitHub name)
+      placeholder: "e.g., sujanthapa01"
+    validations:
+      required: false
+
+  - type: textarea
+    id: bio
+    attributes:
+      label: 📖 Short Bio (Optional)
+      description: Tell us a little about yourself! (This will appear on your profile card)
+      placeholder: "e.g., Computer Science student passionate about web development and open source."
+      rows: 3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: experience_level
+    attributes:
+      label: 🎯 Your Experience Level
+      description: This helps us provide better support!
+      options:
+        - "Complete Beginner (This is my first contribution!)"
+        - "Some Experience (I've done a few projects)"
+        - "Intermediate Developer"
+        - "Experienced Developer"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: motivation
+    attributes:
+      label: 🚀 Why do you want to contribute? (Check all that apply)
+      options:
+        - label: This is my first open source contribution
+        - label: I want to learn about open source
+        - label: I want to build my developer portfolio
+        - label: I want to be part of the community
+        - label: I want to help other beginners
+        - label: I love the ContributorHub project
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: 🎯 What are your goals? (Optional)
+      description: What do you hope to achieve through open source contribution?
+      placeholder: "e.g., Learn Git/GitHub, build portfolio, connect with developers, contribute to meaningful projects..."
+      rows: 3
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Pre-Contribution Checklist
+      description: Please confirm you've completed these steps
+      options:
+        - label: "My GitHub profile is public and has at least one repository"
+          required: true
+        - label: "I have read the [How to Contribute](https://docs.contributorhub.dev/tutorial-basics/how-to-contribute) guide"
+          required: true
+        - label: "I understand this is a learning-friendly project for beginners"
+          required: true
+        - label: "I'm ready to follow the step-by-step contribution process"
+          required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 💬 Anything else you'd like to share?
+      description: Questions, concerns, or just want to say hello? We're here to help!
+      placeholder: "Feel free to share anything else - we love getting to know our contributors! 😊"
+      rows: 2
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        
+        ## 🎉 What happens next?
+        
+        1. **We'll review your request** (usually within 24 hours)
+        2. **You'll get the green light** to start contributing
+        3. **Follow our step-by-step guide** to add your profile
+        4. **Your profile goes live** on our website!
+        5. **Celebrate your first contribution!** 🎊
+        
+        ## 🆘 Need help?
+        
+        Don't worry if you get stuck - we're here to help every step of the way!
+        
+        - 💬 Ask questions in this issue
+        - 📧 Email us at sujanthapa4001@gmail.com
+        
+        **Welcome to the open source community!** 🌟
