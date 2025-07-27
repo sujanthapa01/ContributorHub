@@ -115,11 +115,11 @@ const ContributorCard = ({
       </div>
 
       <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-        {contributor.bio}
+        - {contributor.bio}
       </p>
 
       <div className="mb-4">
-        <p className="text-xs text-muted-foreground mb-2">Languages</p>
+        <p className="text-xs text-muted-foreground mb-2">Languages :</p>
         <div className="flex flex-wrap gap-2">
           {contributor.languages.map((lang) => (
             <Badge
