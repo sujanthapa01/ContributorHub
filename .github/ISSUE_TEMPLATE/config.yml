@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  # - name: 📚 Documentation
+  #   url: https://docs.contributorhub.dev
+  #   about: Read our complete guides and tutorials
+  - name: 💬 GitHub Discussions
+    url: https://github.com/sujanthapa01/ContributorHub/discussions
+    about: Ask questions and discuss with the community
+  - name: 📧 Email Support
+    url: mailto:sujanthapa4001@gmail.com
+    about: Direct email support for urgent issues
+  # - name: 🌐 Live Website
+  #   url: https://contributorhub.dev
+  #   about: Visit the ContributorHub website
