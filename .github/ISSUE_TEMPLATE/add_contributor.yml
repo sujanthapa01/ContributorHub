@@ -1,5 +1,6 @@
 name: "🌟 Add New Contributor"
 description: "Add your profile to ContributorHub — perfect for beginners!"
+title: "✨ Add @[your-username] as a contributor"
 labels: ["👋 new contributor", "✨ enhancement"]
 assignees:
   - sujanthapa01
