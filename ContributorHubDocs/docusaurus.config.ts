@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ContributorHub',
+  title: 'ContributorHub Docs',
   tagline: 'A platform showcasing open-source contributors.',
   favicon: 'img/favicon.ico',
 
@@ -73,7 +73,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/contributorhub.jpg',
     navbar: {
-      title: 'ContributorHub',
+      title: 'ContributorHub Docs',
       logo: {
         alt: 'ContributorHub Logo',
         src: 'img/contributorhub.jpg',
