@@ -20,7 +20,9 @@ Before you start, make sure you have:
 
 ### Step 0: Create an Issue First (MANDATORY)
 
-**⚠️ IMPORTANT**: You MUST create an issue before making any pull request. This helps us track contributions and ensures proper workflow.
+:::important IMPORTANT ⚠️ 
+ You MUST create an issue before making any pull request. This helps us track contributions and ensures proper workflow.
+ :::
 
 1. **Go to GitHub Issues**: Visit [ContributorHub Issues](https://github.com/sujanthapa01/ContributorHub/issues)
 2. **Click "New Issue"**: Select the appropriate issue template
