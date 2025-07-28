@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run contributor add script
-        run: python3 src/scripts/contributor_add.python
+      # - name: Run contributor add script
+      #   run: python3 src/scripts/contributor_add.py 
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
