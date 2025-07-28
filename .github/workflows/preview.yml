@@ -1,4 +1,4 @@
-name: Preview Deployment to Vercel
+name: Preview Deployment with PR Comment
 
 on:
   pull_request:
@@ -11,36 +11,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python 3
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Run contributor add script
-        run: |
-          python3 src/scripts/contributor_add.py
-          git diff --exit-code || (git config user.name "github-actions[bot]" && \
-            git config user.email "github-actions[bot]@users.noreply.github.com" && \
-            git add contributors.json && \
-            git commit -m "chore: add contributor via script" && \
-            git push)
-
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Build with Vite
+      - name: Build
         run: npm run build
 
-      - name: Deploy Preview to Vercel
+      - name: Deploy preview to Vercel
+        id: vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: |
-          echo "Deploying preview..."
-          npx vercel --token $VERCEL_TOKEN --yes --prebuilt --scope $VERCEL_ORG_ID
+          # Deploy with Vercel CLI and output JSON with deployment info
+          vercel_output=$(npx vercel --token $VERCEL_TOKEN --yes --prebuilt --scope $VERCEL_ORG_ID --json)
+          echo "$vercel_output"
+          # Extract URL from the JSON output
+          echo "url=$(echo $vercel_output | jq -r '.[0].url')" >> $GITHUB_OUTPUT
+
+      - name: Comment PR with preview URL
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: |
+            🚀 Preview deployment is ready: ${{ steps.vercel.outputs.url }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
