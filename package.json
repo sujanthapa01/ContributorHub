@@ -10,8 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "contributor_add": "python3 src/scripts/contributor_add.py",
-    "prepare": "husky install",
-    "test": "jest "
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*src/**/*.{js,jsx,ts,tsx,json,css,md}": [
