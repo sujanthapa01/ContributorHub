@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1,
+    "github": "sujanthapa01",
+    "full_name": "Sujan Thapa",
+    "avatar": "https://avatars.githubusercontent.com/u/158448355?v=4",
+    "profile": "https://github.com/sujanthapa01",
+    "short_bio": "Code is poetry written in logic.",
+    "blog": "https://sujanthapa.xyz",
+    "location": "Dharamshala",
+    "languages": ["javascript", "python", "c++"],
+    "created_at": "2024-02-01T08:04:35Z"
+  }
+]
