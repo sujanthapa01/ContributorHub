@@ -222,7 +222,10 @@ const Index = () => {
                 Make your first contribution and see your profile featured here.
                 It's that simple!
               </p>
-              <a href="/docs" rel="noopener noreferrer">
+              <a
+                href="https://sujanthapa01.github.io/ContributorHub/docs/intro"
+                rel="noopener noreferrer"
+              >
                 <Button className="bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90">
                   How to Contribute
                 </Button>

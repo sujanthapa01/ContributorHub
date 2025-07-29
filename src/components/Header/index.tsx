@@ -35,7 +35,7 @@ const Index: React.FC<{
           <nav className="flex items-center gap-4">
             {state === "docs" ? null : (
               <a
-                href="/docs"
+                href="https://sujanthapa01.github.io/ContributorHub/docs/intro"
                 className="border-b border-gray-300 hover:border-primary/50 transition-colors px-2 py-1 text-sm font-medium hidden lg:block xl:block"
               >
                 Docs
