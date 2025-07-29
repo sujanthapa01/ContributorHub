@@ -14,7 +14,7 @@ ContributorHub helps new open source contributors showcase their GitHub profiles
 ## Docs & Support
 
 Detailed docs and contribution guide:  
-https://docs.contributorhub.dev/tutorial-basics/how-to-contribute
+https://sujanthapa01.github.io/ContributorHub/
 
 Questions? Open an issue or email sujanthapa4001@gmail.com
 
