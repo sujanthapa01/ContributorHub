@@ -203,6 +203,6 @@ Now you can:
 
 ---
 
-**Ready to create your pull request?** Remember: Create an issue first, then follow the [How to Contribute](../tutorial-basics/how-to-contribute) guide!
+**Ready to create your pull request?** Remember: Create an issue first, then follow the [How to Contribute](./how-to-contribute) guide!
 
 **You've got this!** 💪 The open source community believes in you!
